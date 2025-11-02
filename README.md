@@ -1,4 +1,4 @@
-# malayalam-corpus-cleaner
+# M-PACT: Malayalam Pre-processing And Curation Toolkit
 
 A toolkit for generating high-quality text corpora from uncleaned base datasets using regex-based cleaning and LLM semantic scoring.
 
@@ -11,7 +11,7 @@ A toolkit for generating high-quality text corpora from uncleaned base datasets 
     The entire pipeline is controlled by a single [config.yaml](./config.yaml) file. Adjust models, paths, and filtering strategies without touching the Python code.
 
 *   **Dual LLM Provider Support**
-    -   **Local Mode**: Run GGUF-quantized models (e.g., Gemma, Llama) on your own machine for privacy, offline use, and cost-effectiveness.
+    -   **Local Mode**: Run GGUF-quantized models (e.g., Gemma, Llama) on your own machine for privacy, offline use and cost-effectiveness.
     -   **API Mode**: Utilize powerful cloud models like Google Gemini for state-of-the-art speed and quality.
 
 *   **Semantic Chunking**
@@ -45,7 +45,7 @@ The toolkit processes documents through a sequential, multi-stage pipeline desig
     Documents are filtered based on fast, rule-based checks defined in the configuration (e.g., minimum word count, Malayalam character ratio).
 
 4.  **LLM Semantic Scoring**
-    If enabled, the documents that passed pre-filtering are scored by a Language Model for semantic coherence, fluency, and logical consistency.
+    If enabled, the documents that passed pre-filtering are scored by a Language Model for semantic coherence, fluency and logical consistency.
 
 5.  **Final Filtering and Deduplication**
     -   Documents are filtered based on the `score_threshold` from the LLM.
