@@ -1,4 +1,4 @@
-# M-PACT: Malayalam Pre-processing And Curation Toolkit
+# CORPSE: CORPus Semantic Evaluator
 
 A toolkit for generating high-quality text corpora from uncleaned base datasets using regex-based cleaning and LLM semantic scoring.
 
@@ -57,7 +57,7 @@ The toolkit processes documents through a sequential, multi-stage pipeline desig
 ## Project Structure
 
 ```
-malayalam-corpus-cleaner/
+CORPSE/
 ├── main.py                      # Entry point
 ├── config.yaml                  # Configuration file
 ├── requirements.txt             # Dependencies
@@ -85,15 +85,15 @@ This lightweight setup uses Google Gemini API for scoring and doesn't require GP
 1. #### Clone Repository
 
     ```bash
-    git clone https://github.com/ussooraj/malayalam-corpus-cleaner.git
-    cd malayalam-corpus-cleaner
+    git clone https://github.com/ussooraj/CORPSE.git
+    cd CORPSE
     ```
 
 2. #### Create Conda Environment
 
     ```bash
-    conda create -n corpus-toolkit python=3.11 -y
-    conda activate corpus-toolkit
+    conda create -n corpse python=3.11 -y
+    conda activate corpse
     ```
 
 3. #### Install Basic Dependencies
@@ -128,15 +128,15 @@ This setup enables local GGUF model inference on GPU for complete offline proces
 1. #### Clone Repository
 
     ```bash
-    git clone https://github.com/ussooraj/malayalam-corpus-cleaner.git
-    cd malayalam-corpus-cleaner
+    git clone https://github.com/ussooraj/CORPSE.git
+    cd CORPSE
     ```
 
 2. #### Create Conda Environment
 
     ```bash
-    conda create -n corpus-toolkit python=3.11 -y
-    conda activate corpus-toolkit
+    conda create -n corpse python=3.11 -y
+    conda activate corpse
     ```
 
 3. #### Install CUDA and PyTorch
